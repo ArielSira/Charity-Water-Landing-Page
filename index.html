@@ -53,6 +53,12 @@
       align-items: center;
       font-size: 20px;
       font-weight: bold;
+      gap: 8px;
+    }
+
+    .logo img {
+      height: 24px;
+      width: auto;
     }
 
     .give-button {
@@ -66,21 +72,21 @@
     }
 
     .hero {
-      background-image: url('https://d35lvrk9fb4ftj.cloudfront.net/eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjUyMDQzL2FiYTVjODg3MTIzNDY5OGExNTJjZDAxNTJiYjdiOTM5OWM2ZTYyMTc1YmQ3ODQ0NTkxMjI1ZjNmYjI2MmY4ZWIvcHJldmlldy9aaW1iYWJ3ZV8yMDIyX0NHLTgxNzEuanBnIiwiZWRpdHMiOnsicmVzaXplIjp7IndpZHRoIjo2MDAsImhlaWdodCI6NjAwLCJmaXQiOiJpbnNpZGUiLCJ3aXRob3V0RW5sYXJnZW1lbnQiOnRydWV9fX0=');
+      background-image: url('https://images.ctfassets.net/2w85ks0ylymt/4qCRGVNhtU2EI4CdBrENqf/dfc6791119a5120822a1ca15da565c9d/Zimbabwe_2022_CG-8074.jpeg?w=1200');
       background-size: cover;
-      background-position: center;
+      background-repeat: no-repeat;
+      background-position: center top;
       position: relative;
       color: white;
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
     }
 
     .hero-content {
-      padding-top: 30px;
+      padding: 10px 20px 0;
       text-align: center;
-      padding: 0 20px;
     }
 
     .hero-content h1 {
@@ -132,6 +138,10 @@
         display: flex;
       }
 
+      .hero-content {
+        padding: 5px 20px 0;
+      }
+
       .hero-content h1 {
         font-size: 32px;
       }
@@ -149,7 +159,10 @@
 </head>
 <body>
   <header class="navbar">
-    <div class="logo">charity: water</div>
+    <div class="logo">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsd8aK9TdwvW8su6pUVvTMA9TipzgkxM-v-A&s" alt="Charity Water Logo">
+      charity: water
+    </div>
     <button class="nav-toggle" onclick="toggleMenu()">☰</button>
     <nav class="nav-links" id="navMenu">
       <a href="#">About Us</a>
